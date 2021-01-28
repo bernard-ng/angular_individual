@@ -25,6 +25,22 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr *ngFor="let serie of data">
+                                <th>{{ serie.id }}</th>
+                                <th>{{ serie.name }}</th>
+                                <th>{{ serie.date }}</th>
+                                <td>
+                                    <a class="btn btn-sm btn-info">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a class="btn btn-sm btn-success">
+                                        <i class="fa fa-comments"></i>
+                                    </a>
+                                    <button class="btn btn-sm btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
