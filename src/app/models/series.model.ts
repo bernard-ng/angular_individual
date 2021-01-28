@@ -1,3 +1,5 @@
+import Comment from "./comment.model";
+
 export default interface Series {
     readonly id: number;
     name: string;
@@ -6,5 +8,5 @@ export default interface Series {
     description: string;
     review: string;
     photo: string;
-    comments: object[];
+    comments: Comment[];
 }
