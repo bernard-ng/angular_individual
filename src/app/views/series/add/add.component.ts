@@ -31,7 +31,7 @@ export class AddComponent implements OnInit {
 
   async handleSubmit() {
     const data = {
-        id: 11,
+        id: this.service.increment(),
         name: this.form.value.name,
         season_released_at: this.form.value.season_released_at,
         season_count: this.form.value.season_count,

@@ -360,6 +360,11 @@ export class DataService {
     return of(this.data);
   }
 
+  increment(): number {
+    const last = this.data[this.data.length  -1];
+    return last.id + 1;
+  }
+
   create(data: Series): void {
     this.data.push(data)
   }
