@@ -8,6 +8,7 @@ import { AddComponent } from './add/add.component';
 import { EditComponent } from './edit/edit.component';
 import { CommentsComponent } from './comments/comments.component';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
   imports: [
     CommonModule,
     SeriesRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SeriesModule { }
