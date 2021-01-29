@@ -4,12 +4,14 @@ import {RouterModule} from '@angular/router';
 import {FooterComponent} from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
