@@ -5,13 +5,15 @@ import {FooterComponent} from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
   declarations: [
     FooterComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,9 @@ import { HeaderComponent } from './header/header.component';
   ],
   exports: [
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    HeaderComponent,
+    LoaderComponent
   ]
 })
 export class ComponentsModule {

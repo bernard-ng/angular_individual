@@ -1,0 +1,22 @@
+<app-header name="Détaille de la série"></app-header>
+<app-loader [loading]="!serie"></app-loader>
+
+<div class="container-fluid mt--100">
+    <div class="row" *ngIf="serie">
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h1>{{ serie.name }}</h1>
+                    <p>Première saison sortie le : {{ serie.season_released_at }}</p>
+                    <p>Nombre de saisons : {{ serie.season_count }}</p>
+                    <hr>
+                    <h3>Description</h3>
+                    <p>{{ serie.description }}</p>
+                    <hr>
+                    <h3>Critique</h3>
+                    <p>{{  serie.review }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

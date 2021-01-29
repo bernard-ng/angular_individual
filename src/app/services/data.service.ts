@@ -356,7 +356,24 @@ export class DataService {
     },
   ];
 
-  getSeries(): Observable<Series[]> {
+  all(): Observable<Series[]> {
     return of(this.data);
+  }
+
+  create(data: Series): void {
+    this.data.push(data)
+  }
+
+  read(id: number): Observable<Series|undefined> {
+    return of(this.data.find(s => s.id === +id))
+  }
+
+  update(id: number, data: Series): void {
+    const index = this.data.findIndex(s => s.id === +id);
+    this.data[index] = {...data};
+  }
+
+  delete(id: number, data: Series[]): Observable<Series[]> {
+    return of(data.filter(s => s.id !== id))
   }
 }
