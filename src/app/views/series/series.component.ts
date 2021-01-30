@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Series from '../../models/series.model';
 import { DataService } from '../../services/data.service'
+import sweetAlert from 'sweetalert2';
 
 @Component({
   selector: 'app-series',
@@ -16,10 +17,18 @@ export class SeriesComponent implements OnInit {
     this.service.all().subscribe(data => this.data = data);
   }
 
-  handleDelete(id: number): void {
+  async handleDelete(id: number) {
     const confirm = window.confirm('voulez-vous vraiment supprimer cette série ?');
     if (confirm) {
-      this.service.delete(id, this.data).subscribe(data => this.data = data); 
-    }  
+      this.service.delete(id, this.data).subscribe(data => this.data = data);
+
+      // usage of sweetalert library to display a success feedback
+      await sweetAlert.fire({
+        icon: 'success',
+        title: 'Suppression réussie',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
   }
 }

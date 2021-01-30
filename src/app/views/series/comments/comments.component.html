@@ -9,6 +9,9 @@
                     <div *ngFor="let comment of serie.comments">
                         <h3>{{ comment.author }} - {{ comment.date }}</h3>
                         <p>{{ comment.content }}</p>
+                        <button class="btn btn-sm btn-danger display-inline" (click)="handleDelete(comment.id)">
+                            Supprimer
+                        </button> 
                         <hr>
                     </div>
                 </div>

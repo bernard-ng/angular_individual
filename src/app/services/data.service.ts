@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 import Series from '../models/series.model';
+import Comment from '../models/comment.model';
 
 @Injectable({
   providedIn: 'root',
@@ -379,6 +380,10 @@ export class DataService {
   }
 
   delete(id: number, data: Series[]): Observable<Series[]> {
-    return of(data.filter(s => s.id !== id))
+    return of(data.filter(s => s.id !== +id))
+  }
+
+  deleteComment(id: number, data: Comment[]): Observable<Comment[]> {
+    return of(data.filter(c => c.id !== +id))
   }
 }
