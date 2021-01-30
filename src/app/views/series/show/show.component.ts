@@ -8,17 +8,14 @@ import { DataService } from '../../../services/data.service';
   templateUrl: './show.component.html',
 })
 export class ShowComponent implements OnInit {
+  serie: Series;
+  private params: Params;
 
-  serie: Series
-  private params: Params
-
-  constructor(private service: DataService, private route: ActivatedRoute) { 
-    this.route.params.subscribe(p => this.params = p);
+  constructor(private service: DataService, private route: ActivatedRoute) {
+    this.route.params.subscribe((p) => (this.params = p));
   }
-
+  // show the details series by id
   ngOnInit(): void {
-    this.service
-      .read(this.params.id)
-      .subscribe(data => this.serie = data);
+    this.service.read(this.params.id).subscribe((data) => (this.serie = data));
   }
 }

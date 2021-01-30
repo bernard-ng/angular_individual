@@ -8,6 +8,7 @@ import Comment from '../models/comment.model';
   providedIn: 'root',
 })
 export class DataService {
+  // Here the series data written by hands because we don't use the API
   private data: Series[] = [
     {
       id: 1,
@@ -356,34 +357,37 @@ export class DataService {
       ],
     },
   ];
-
+  // This function with observable for the recuperation of all series from data services
   all(): Observable<Series[]> {
     return of(this.data);
   }
-
+  // uncrement the id after creating a new serie
   increment(): number {
-    const last = this.data[this.data.length  -1];
+    const last = this.data[this.data.length - 1];
     return last.id + 1;
   }
 
+  // Realize the crud of the application
+  // create new serie
   create(data: Series): void {
-    this.data.push(data)
+    this.data.push(data);
   }
-
-  read(id: number): Observable<Series|undefined> {
-    return of(this.data.find(s => s.id === +id))
+  // show the details of serie by id
+  read(id: number): Observable<Series | undefined> {
+    return of(this.data.find((s) => s.id === +id));
   }
-
+  // edit the serie by id
   update(id: number, data: Series): void {
-    const index = this.data.findIndex(s => s.id === +id);
-    this.data[index] = {...data};
+    const index = this.data.findIndex((s) => s.id === +id);
+    this.data[index] = { ...data };
   }
-
+  // delete the serie by id
   delete(id: number, data: Series[]): Observable<Series[]> {
-    return of(data.filter(s => s.id !== +id))
+    return of(data.filter((s) => s.id !== +id));
   }
 
+  // This function with observable is about to delete a comment
   deleteComment(id: number, data: Comment[]): Observable<Comment[]> {
-    return of(data.filter(c => c.id !== +id))
+    return of(data.filter((c) => c.id !== +id));
   }
 }
