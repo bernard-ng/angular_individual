@@ -18,7 +18,7 @@ export class DataService {
         'À travers ces personnages « moralement ambigus », la série explore les sujets liés au pouvoir politique, au changement climatique, à la hiérarchie sociale, la religion, la guerre civile, la sexualité et à la violence en général. Game of Thrones a acquis une fanbase internationale exceptionnellement vaste et active.',
       review:
         'Contrairement à une opinion répandue, le Lorem Ipsum est pas simplement du texte aléatoire.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -52,7 +52,7 @@ export class DataService {
         'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ',
       review:
         'Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -95,7 +95,7 @@ export class DataService {
         'De nombreuses suites logicielles de mise en page ou éditeurs de sites Web',
       review:
         'Changement climatique, à la hiérarchie sociale, la religion, la guerre civile.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -119,7 +119,7 @@ export class DataService {
       description:
         'Game of Thrones a acquis une fanbase internationale exceptionnellement vaste et active.',
       review: 'Les sujets liés au pouvoir politique, au changement climatique.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -150,7 +150,7 @@ export class DataService {
         'De nombreuses suites logicielles de mise en page ou éditeurs de sites Web',
       review:
         'Like an a acquis une fanbase internationale exceptionnellement vaste et active.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -186,7 +186,7 @@ export class DataService {
       description:
         'Lextrait standard de Lorem Ipsum utilisé depuis le XVIè siècle.',
       review: 'Le Lorem Ipsum ainsi obtenu ne contient aucune répétition.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -217,7 +217,7 @@ export class DataService {
         'La série explore les sujets liés au pouvoir politique, la religion, la guerre civile, exceptionnellement vaste et active.',
       review:
         'la série explore les sujets liés au pouvoir politique, au changement climatique, à la hiérarchie sociale.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -248,7 +248,7 @@ export class DataService {
         'Est a acquis une fanbase internationale exceptionnellement vaste et active.',
       review:
         'la série explore les sujets liés au pouvoir politique, violence en général active.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -290,7 +290,7 @@ export class DataService {
       description:
         'Lorem Ipsum, vous devez être sûr quil ny a rien dembarrassant caché dans le texte.',
       review: 'Un professeur du Hampden-Sydney College, en Virginie.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,
@@ -315,7 +315,7 @@ export class DataService {
         'la série explore les sujets liés au pouvoir politique, fanbase internationale exceptionnellement vaste et active.',
       review:
         'sERIES a acquis une fanbase internationale exceptionnellement vaste et active.',
-      photo: '',
+      photo: 'https://picsum.photos/200/300',
       comments: [
         {
           id: 1,

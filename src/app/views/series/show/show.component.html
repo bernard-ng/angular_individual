@@ -7,6 +7,9 @@
             <div class="card shadow">
                 <div class="card-body">
                     <h1>{{ serie.name }}</h1>
+                    <div class="d-flex justify-content-center align-items-center mb-2 mt-2">
+                        <img src="{{ serie.photo }}" alt="{{ serie.name }}">
+                    </div>
                     <p>Première saison sortie le : {{ serie.season_released_at }}</p>
                     <p>Nombre de saisons : {{ serie.season_count }}</p>
                     <hr>
