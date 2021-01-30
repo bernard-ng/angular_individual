@@ -3,7 +3,7 @@ import Comment from "./comment.model";
 export default interface Series {
     readonly id?: number;
     name: string;
-    season_released_at: string;
+    season_released_at: Date;
     season_count: number;
     description: string;
     review: string;

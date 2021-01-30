@@ -12,7 +12,7 @@ export class DataService {
     {
       id: 1,
       name: 'Game of thrones',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 7,
       description:
         'À travers ces personnages « moralement ambigus », la série explore les sujets liés au pouvoir politique, au changement climatique, à la hiérarchie sociale, la religion, la guerre civile, la sexualité et à la violence en général. Game of Thrones a acquis une fanbase internationale exceptionnellement vaste et active.',
@@ -46,7 +46,7 @@ export class DataService {
     {
       id: 2,
       name: 'Americans Gods',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 8,
       description:
         'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. ',
@@ -89,7 +89,7 @@ export class DataService {
     {
       id: 3,
       name: 'The blacklist',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 12,
       description:
         'De nombreuses suites logicielles de mise en page ou éditeurs de sites Web',
@@ -114,7 +114,7 @@ export class DataService {
     {
       id: 4,
       name: 'The witcher',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 8,
       description:
         'Game of Thrones a acquis une fanbase internationale exceptionnellement vaste et active.',
@@ -144,7 +144,7 @@ export class DataService {
     {
       id: 5,
       name: 'Malcolm',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 10,
       description:
         'De nombreuses suites logicielles de mise en page ou éditeurs de sites Web',
@@ -181,7 +181,7 @@ export class DataService {
     {
       id: 6,
       name: 'The Bold Type',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 4,
       description:
         'Lextrait standard de Lorem Ipsum utilisé depuis le XVIè siècle.',
@@ -211,7 +211,7 @@ export class DataService {
     {
       id: 7,
       name: 'La Pandemie',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 7,
       description:
         'La série explore les sujets liés au pouvoir politique, la religion, la guerre civile, exceptionnellement vaste et active.',
@@ -242,7 +242,7 @@ export class DataService {
     {
       id: 8,
       name: 'La Reine du Sud',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 12,
       description:
         'Est a acquis une fanbase internationale exceptionnellement vaste et active.',
@@ -285,7 +285,7 @@ export class DataService {
     {
       id: 9,
       name: 'Casa Del Papa',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 7,
       description:
         'Lorem Ipsum, vous devez être sûr quil ny a rien dembarrassant caché dans le texte.',
@@ -309,7 +309,7 @@ export class DataService {
     {
       id: 10,
       name: 'Loïs et Clarck',
-      season_released_at: '',
+      season_released_at: new Date(),
       season_count: 25,
       description:
         'la série explore les sujets liés au pouvoir politique, fanbase internationale exceptionnellement vaste et active.',
